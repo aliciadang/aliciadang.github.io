@@ -953,6 +953,7 @@ section {
     padding-bottom: 2rem;
   }
   .about-container .half-about p {
+    font-size: 1rem !important;
     padding-left: 0;
   }
   .about-stats .progress-bars {
@@ -1018,6 +1019,15 @@ section {
   }
 }
 @media screen and (max-width: 390px) {
+  .main-title h2 {
+    font-size: 1.4rem;
+  }
+  .main-title h2 span {
+    font-size: 1.5rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 1.5rem;
+  }
   .left-header {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
@@ -1033,29 +1043,76 @@ section {
     font-size: 0.8rem !important;
     line-height: 2rem !important;
   }
+  .about-container {
+    grid-template-columns: 1fr;
+    padding-top: 5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .about-container .half-about {
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+  .about-container .half-about h4 {
+    font-size: 1.5rem;
+  }
+  .about-container .half-about p {
+    font-size: 0.8rem !important;
+    padding-left: 0;
+  }
+  .about-stats .progress-bars p {
+    font-size: 0.8rem;
+  }
+  .education .education-item .ed-duration {
+    font-size: 0.7rem;
+  }
+  .education .education-item h5 {
+    font-size: 0.8rem;
+  }
+  .education .education-item .ed-degree {
+    font-size: 0.8rem;
+  }
+  .timeline-main .timeline-item {
+    padding-left: 1rem;
+  }
+  .timeline-main .timeline-item .tl-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .timeline-main .timeline-item .tl-icon i {
+    font-size: 1rem;
+  }
+  .timeline-main .timeline-item .tl-duration {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .timeline-main .timeline-item h5 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .timeline-main .timeline-item h5 span {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .timeline-main .timeline-item ul li {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
   .contact-content-con .left-contact h4 {
     font-size: 1rem !important;
   }
-  .contact-info .contact-item {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: baseline !important;
+  .contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
+    font-size: 0.7rem !important;
+    padding: 0.4rem 1.1rem;
   }
-  .contact-info .contact-item span {
-    font-size: 0.8rem !important;
-  }
-  .contact-info .contact-item p {
-    font-size: 0.8rem !important;
+  .contact-info {
+    display: none !important;
   }
   .contact-content-con .contact-btn {
     font-size: 0.85rem;
   }
   .contact-content-con .contact-btn .contact-btn-text {
     padding: 0.9rem 0.9rem;
-  }
-  .contact-content-con .right-contact .input-control input,
-.contact-content-con .right-contact .input-control textarea {
-    font-size: 13px !important;
   }
   .portfolio-item {
     position: relative;
@@ -1070,9 +1127,19 @@ section {
   }
   .main-btn .btn-text {
     padding: 0 1rem !important;
+    font-size: 0.8rem !important;
   }
 }
 @media screen and (max-width: 280px) {
+  .main-title h2 {
+    font-size: 1.3rem;
+  }
+  .main-title h2 span {
+    font-size: 1.4rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 1.4rem;
+  }
   .left-header {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
@@ -1091,19 +1158,82 @@ section {
     font-size: 0.8rem !important;
     line-height: 1.5rem !important;
   }
+  .about-container {
+    grid-template-columns: 1fr;
+    padding-top: 4rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .about-container .half-about {
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+  .about-container .half-about h4 {
+    font-size: 1.2rem;
+  }
+  .about-container .half-about p {
+    font-size: 0.8rem !important;
+    line-height: 1.5rem !important;
+    padding-left: 0;
+  }
+  .about-stats h4 {
+    font-size: 1.2rem;
+  }
+  .about-stats .progress-bars p {
+    font-size: 0.7rem;
+  }
+  .education .education-item .ed-duration {
+    font-size: 0.6rem !important;
+  }
+  .education .education-item h5 {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .education .education-item h5 span {
+    color: var(--color-grey-2);
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .education .education-item .ed-degree {
+    color: var(--color-secondary);
+    padding-bottom: 2.5rem;
+  }
+  .timeline-main {
+    padding-top: 3rem !important;
+  }
+  .timeline-main .timeline-item {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .timeline-main .timeline-item .tl-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .timeline-main .timeline-item .tl-icon i {
+    font-size: 0.8rem;
+  }
+  .timeline-main .timeline-item .tl-duration {
+    font-size: 0.6rem !important;
+    font-weight: 500;
+  }
+  .timeline-main .timeline-item h5 {
+    font-size: 0.7rem !important;
+    font-weight: 600;
+  }
+  .timeline-main .timeline-item h5 span {
+    font-weight: 500;
+    font-size: 0.7rem !important;
+  }
+  .timeline-main .timeline-item ul li {
+    font-size: 0.7rem !important;
+    font-weight: 300;
+  }
   .contact-content-con .left-contact h4 {
     font-size: 1rem !important;
   }
-  .contact-info .contact-item {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: baseline !important;
-  }
-  .contact-info .contact-item span {
-    font-size: 0.8rem !important;
-  }
-  .contact-info .contact-item p {
-    font-size: 0.8rem !important;
+  .contact-info {
+    display: none !important;
   }
   .contact-content-con .contact-btn {
     font-size: 0.85rem;
@@ -1111,15 +1241,21 @@ section {
   .contact-content-con .contact-btn .contact-btn-text {
     padding: 0.9rem 0.9rem;
   }
-  .contact-content-con .right-contact .input-control input,
-.contact-content-con .right-contact .input-control textarea {
-    font-size: 13px !important;
+  .port-text {
+    font-size: 0.8rem !important;
+    padding: 2rem 0;
   }
-  .portfolio-item {
+  .portfolios {
+    margin-top: 2rem;
+  }
+  .portfolios .portfolio-item {
     position: relative;
     border-radius: 15px;
   }
-  .portfolio-item img {
+  .portfolios .portfolio-item .hover-items h3 {
+    font-size: 0.7rem !important;
+  }
+  .portfolios .portfolio-item img {
     width: 100%;
     height: 150px !important;
     -o-object-fit: cover;
@@ -1127,7 +1263,7 @@ section {
     border-radius: 15px;
   }
   .main-btn .btn-text {
+    padding: 0 1rem !important;
     font-size: 0.8rem !important;
-    padding: 0 0.5rem !important;
   }
 }/*# sourceMappingURL=styles.css.map */

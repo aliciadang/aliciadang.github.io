@@ -369,6 +369,7 @@
             padding-bottom: 2rem;
 
             p {
+                font-size: 1rem !important;
                 padding-left: 0;
             }
         }
@@ -461,6 +462,20 @@
 }
 
 @media screen and (max-width: 390px) {
+    .main-title {
+        h2 {
+            font-size: 1.4rem;
+
+            span {
+                font-size: 1.5rem;
+            }
+
+            .bg-text {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
     .left-header {
         height: fit-content !important;
 
@@ -472,33 +487,113 @@
             max-width: 55% !important;
         }
     }
+
     .right-header {
-        p{
+        p {
             font-size: .8rem !important;
             line-height: 2rem !important;
         }
     }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        padding-top: 5rem !important;
+        padding-bottom: 2rem !important;
+
+        .half-about {
+            padding-right: 0;
+            padding-bottom: 2rem;
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: .8rem !important;
+                padding-left: 0;
+            }
+        }
+    }
+
+    .about-stats {
+        .progress-bars {
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .education {
+        .education-item {
+            .ed-duration {
+                font-size: .7rem;
+            }
+
+            h5 {
+                font-size: .8rem;
+            }
+
+            .ed-degree {
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .timeline-main {
+        .timeline-item {
+            padding-left: 1rem;
+            .tl-icon {
+                height: 30px;
+                width: 30px;
+                i {
+                    font-size: 1rem;
+                }
+            }
+
+            .tl-duration {
+                font-size: .7rem;
+                font-weight: 500;
+            }
+
+            h5 {
+                font-size: 1rem;
+                font-weight: 600;
+
+                span {
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+            }
+
+            ul li {
+                font-size: .8rem;
+                font-weight: 300;
+            }
+        }
+    }
+
+
     .contact-content-con {
         .left-contact {
             h4 {
                 font-size: 1rem !important;
             }
         }
-    }
-    .contact-info {
-        .contact-item {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: baseline !important;
 
-            span {
-                font-size: .8rem !important;
-            }
+        .right-contact {
+            .input-control {
 
-            p {
-                font-size: .8rem !important;
+                input,
+                textarea {
+                    font-size: .7rem !important;
+                    padding: .4rem 1.1rem;
+                }
             }
         }
+    }
+
+    .contact-info {
+        display: none !important;
     }
 
     .contact-content-con {
@@ -509,14 +604,6 @@
                 padding: .9rem .9rem;
             }
 
-        }
-        .right-contact {
-            .input-control {
-                input,
-                textarea {
-                    font-size: 13px !important;
-                }
-            }
         }
     }
 
@@ -531,14 +618,30 @@
             border-radius: 15px;
         }
     }
+
     .main-btn {
         .btn-text {
             padding: 0 1rem !important;
+            font-size: .8rem !important;
         }
     }
 }
 
 @media screen and (max-width: 280px) {
+    .main-title {
+        h2 {
+            font-size: 1.3rem;
+
+            span {
+                font-size: 1.4rem;
+            }
+
+            .bg-text {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
     .left-header {
         height: fit-content !important;
 
@@ -556,10 +659,104 @@
             font-size: 1rem !important;
         }
 
-        p{
+        p {
             font-size: .8rem !important;
             line-height: 1.5rem !important;
         }
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        padding-top: 4rem !important;
+        padding-bottom: 1rem !important;
+
+        .half-about {
+            padding-right: 0;
+            padding-bottom: 2rem;
+            h4{
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: .8rem !important;
+                line-height: 1.5rem !important;
+                padding-left: 0;
+            }
+        }
+    }
+
+    .about-stats {
+        h4{
+            font-size: 1.2rem;
+        }
+        .progress-bars {
+            p {
+                font-size: .7rem;
+            }
+        }
+    }
+
+    .education {
+        .education-item {
+            .ed-duration {
+                font-size: .6rem !important;
+            }
+
+            h5 {
+                padding: 1rem 0;
+                text-transform: uppercase;
+                font-size: .8rem;
+                font-weight: 600;
+
+                span {
+                    color: var(--color-grey-2);
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .ed-degree {
+                color: var(--color-secondary);
+                padding-bottom: 2.5rem;
+            }
+        }
+    }
+
+    .timeline-main {
+        padding-top: 3rem !important;
+        .timeline-item {
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+
+            .tl-icon {
+                height: 30px;
+                width: 30px;
+
+                i {
+                    font-size: .8rem;
+                }
+            }
+
+            .tl-duration {
+                font-size: .6rem !important;
+                font-weight: 500;
+            }
+
+            h5 {
+                font-size: .7rem !important;
+                font-weight: 600;
+
+                span {
+                    font-weight: 500;
+                    font-size: .7rem !important;
+                }
+            }
+
+            ul li {
+                font-size: .7rem !important;
+                font-weight: 300;
+            }
+        }
+
     }
     .contact-content-con {
         .left-contact {
@@ -568,56 +765,49 @@
             }
         }
     }
+
     .contact-info {
-        .contact-item {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: baseline !important;
-
-            span {
-                font-size: .8rem !important;
-            }
-
-            p {
-                font-size: .8rem !important;
-            }
-        }
+        display: none !important;
     }
 
     .contact-content-con {
         .contact-btn {
             font-size: .85rem;
-
+            
             .contact-btn-text {
                 padding: .9rem .9rem;
             }
-
         }
-        .right-contact {
-            .input-control {
-                input,
-                textarea {
-                    font-size: 13px !important;
+    }
+
+    .port-text {
+        font-size: .8rem !important;
+        padding: 2rem 0;
+    }
+    
+    .portfolios{
+        margin-top: 2rem;
+        .portfolio-item {
+            position: relative;
+            border-radius: 15px;
+            .hover-items{
+                h3{
+                    font-size: .7rem !important;
                 }
+            }
+            img {
+                width: 100%;
+                height: 150px !important;
+                object-fit: cover;
+                border-radius: 15px;
             }
         }
     }
 
-    .portfolio-item {
-        position: relative;
-        border-radius: 15px;
-
-        img {
-            width: 100%;
-            height: 150px !important;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-    }
     .main-btn {
         .btn-text {
+            padding: 0 1rem !important;
             font-size: .8rem !important;
-            padding: 0 .5rem !important;
         }
     }
 }
