@@ -462,8 +462,14 @@
 
 @media screen and (max-width: 390px) {
     .left-header {
+        height: fit-content !important;
+
+        .h-shape {
+            display: none;
+        }
+
         img {
-            max-width: 80% !important;
+            max-width: 55% !important;
         }
     }
     .right-header {
@@ -528,6 +534,90 @@
     .main-btn {
         .btn-text {
             padding: 0 1rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .left-header {
+        height: fit-content !important;
+
+        .h-shape {
+            display: none;
+        }
+
+        img {
+            max-width: 80% !important;
+        }
+    }
+
+    .right-header {
+        .name {
+            font-size: 1rem !important;
+        }
+
+        p{
+            font-size: .8rem !important;
+            line-height: 1.5rem !important;
+        }
+    }
+    .contact-content-con {
+        .left-contact {
+            h4 {
+                font-size: 1rem !important;
+            }
+        }
+    }
+    .contact-info {
+        .contact-item {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: baseline !important;
+
+            span {
+                font-size: .8rem !important;
+            }
+
+            p {
+                font-size: .8rem !important;
+            }
+        }
+    }
+
+    .contact-content-con {
+        .contact-btn {
+            font-size: .85rem;
+
+            .contact-btn-text {
+                padding: .9rem .9rem;
+            }
+
+        }
+        .right-contact {
+            .input-control {
+                input,
+                textarea {
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }
+
+    .portfolio-item {
+        position: relative;
+        border-radius: 15px;
+
+        img {
+            width: 100%;
+            height: 150px !important;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+    }
+    .main-btn {
+        .btn-text {
+            font-size: .8rem !important;
+            padding: 0 .5rem !important;
         }
     }
 }
